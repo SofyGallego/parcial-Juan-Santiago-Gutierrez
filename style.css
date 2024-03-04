@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.linkedin {
+    width: 40px;
+    height: auto;
+    margin-left: 200px;
+    margin-right: 10px;
+    cursor: pointer; /* Agregué un margen derecho para separar el icono de la barra de búsqueda */
+}
+
+.barra-busqueda {
+    height: 25px;
+    width: 330px; /* Ajusta el ancho según tus necesidades */
+    padding: 5px 30px 5px 25px;
+    border: none;
+    border-radius: 5px;
+    background: url(iconos/lupa.png) no-repeat 10px center;
+    background-size: 15px;
+}
+.barra-busqueda::placeholder {
+    color: #888; /* Ajusta el color del texto del placeholder según sea necesario */
+    padding-left: 30px; /* Ajusta el espacio del placeholder para que no se superponga con la lupa */
+}
+.barra-busqueda:focus {
+    padding-left: 35px; /* Ajusta el espacio cuando la barra de búsqueda está enfocada */
+}
+.casa-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+}
+.casa {
+    width: 25px;
+    height: auto;
+    margin-bottom: 5px;
+}
+.casa-container:hover .casa {
+    color: white; /* Cambié el color cuando el mouse está sobre el contenedor de la casa */
+}
+.inicio {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.casa-container:hover .inicio {
+    color: #000; /* Cambié el color cuando el mouse está sobre el contenedor de la casa */
+}
