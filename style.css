@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 2px solid #ddd;
-    height: 60px;
+    height: 50px;
     padding: 0 20px;
 }
 
@@ -41,15 +41,17 @@ body {
     flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
     align-items: center;
     cursor: pointer;
+    margin-left:30px;
 }
 .casa {
-    width: 25px;
+    width: 30px;
     height: auto;
-    margin-bottom: 5px;
+    position: relative;
 }
 .casa-container:hover .casa {
-    color: white; /* Cambié el color cuando el mouse está sobre el contenedor de la casa */
+    color: black;
 }
+
 .inicio {
     font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
     color: #555; /* Ajusta el color del texto según tus preferencias */
@@ -57,5 +59,124 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .casa-container:hover .inicio {
-    color: #000; /* Cambié el color cuando el mouse está sobre el contenedor de la casa */
+    color: black; /* Cambié el color cuando el mouse está sobre el contenedor de la casa */
+}
+.red-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.red {
+    width: 25px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-red {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+.text-red:hover {
+    color: black;
+}
+.text :hover {
+    color: black;
+}
+.portafolio-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.portafolio {
+    width: 24px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-empleos {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-empleos:hover {
+    color: black;
+}
+.mensajes-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.mensajes {
+    width: 24px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-mensajes {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-mensajes:hover {
+    color: black;
+}
+.notificaciones-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.notificaciones {
+    width: 24px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-notificaciones {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-notificaciones:hover {
+    color: black;
+}
+.perfil-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.perfil {
+    width: 24px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-perfil {
+    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-perfil:hover {
+    color: black;
 }
