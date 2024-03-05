@@ -1,12 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
-.menu {
+.menu { 
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #e8e8e8;
     height: 50px;
     padding: 0 20px;
 }
@@ -44,7 +45,7 @@ body {
     margin-left:30px;
 }
 .casa {
-    width: 30px;
+    width: 33px;
     height: auto;
     position: relative;
 }
@@ -70,7 +71,7 @@ body {
     margin-left: 30px;
 }
 .red {
-    width: 25px;
+    width: 24px;
     height: auto;
     position: relative;
     margin-bottom: 0px;
@@ -160,8 +161,7 @@ body {
 .perfil-container {
     margin-top: 5PX;
     display: flex;
-    flex-direction: column; /* Cambié a dirección de columna para apilar los elementos verticalmente */
-    align-items: center;
+    flex-direction: column; 
     cursor: pointer;
     margin-left: 30px;
 }
@@ -172,11 +172,250 @@ body {
     margin-bottom: 0px;
 }
 .text-perfil {
-    font-size: 12px; /* Ajusta el tamaño del texto según tus necesidades */
-    color: #555; /* Ajusta el color del texto según tus preferencias */
+    font-size: 12px; 
+    color: #555; 
     white-space: nowrap;
     font-family: Arial, Helvetica, sans-serif;
 }
 .text-perfil:hover {
     color: black;
+}
+.yo-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer;
+    margin-left: 30px;
+}
+.yo {
+    width: 30px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-yo {
+    font-size: 12px; 
+    color: #555; 
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+.text-yo:hover {
+    color: black;
+}
+.separador {
+    height: 50px; /* Ajusta la altura de la línea según tus necesidades */
+    width: 1px; /* Ancho de la línea */
+    background-color: #ddd; /* Color de la línea */
+    margin: 0 20px; /* Margen a cada lado de la línea */
+}
+.negocios-container {
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer;
+    margin-right: 30px;
+    align-items: center;
+}
+.negocios {
+    width: 25px;
+    height: Auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.text-negocios {
+    font-size: 12px; 
+    color: #555; 
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+.text-negocios:hover {
+    color: black;
+}
+.text-negocios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prueba-container {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1px;
+    font-size: 13px;
+}
+
+.linea-dorada {
+    color: #ffae00a9; /* Color dorado */
+    cursor: pointer;
+}
+
+#texto-subrayado:hover .linea-dorada {
+    color: black; /* Cambia de color al pasar el mouse sobre cualquier parte del contenedor */
+    text-decoration: none; /* Quita el subrayado */
+}
+.profile-section {
+    margin-left: 220px;
+    width: 200px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.profile-section p {
+    color: #555;
+    margin: 8px 0;
+}
+.perfil-circulo {
+    width: 100px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 100px;
+    border-radius: 50%; /* Esto hará que el contenedor sea un círculo */
+    overflow: hidden; /* Esto oculta las partes de la imagen fuera del círculo */
+    border: 2px solid #ddd; /* Puedes ajustar el color y el grosor del borde */
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 100%; /* Esto hará que la imagen se ajuste al tamaño del círculo */
+    height: auto;
+}
+.universidad {
+    font-size: 11px;
+}
+.section-divider {
+    width: 110%; /* Ajusta el ancho de la línea al 100% del contenedor */
+    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
+    background-color: #ddd; /* Color de la línea */
+    margin: 2px 0;
+    opacity: 70%; /* Ajusta el margen superior e inferior según tus necesidades */
+    padding: 0px;
+}
+.contactos {
+    width: 100px;
+    font-size: 13px;
+    color: gainsboro;
+    align-self: flex-start;
+    margin-right: 500px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.contactos-red {
+    color: black;
+    align-self: flex-start;
+    margin-top: 2px;
+    font-size: 11px;
+}
+
+.letra {
+    align-self: flex-end;
+    width: 10px;
+}
+.accede {
+    width: 200px;
+    align-self: flex-start;
+    color: #555;
+    margin-right: 100px;
+    font-size: 12px;
+    text-align: justify;
+}
+.separador-informacion {
+    width: 110%;
+    height: 1px;
+    background-color: #ddd; /* Color de la línea, ajusta según tus preferencias */
+    margin: 10px 0; /* Ajusta el margen superior e inferior según tus necesidades */
+}
+.marcador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icono-marcador {
+    width: 20px;
+    height: auto;
+}
+
+.text-marcador {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+.separator {
+    height: 1px; /* Grosor de la línea */
+    width: 220px; /* Longitud de la línea */
+    background-color: #ddd; /* Color de la línea */
+    margin-left: -10px; /* Margen izquierdo negativo igual a la longitud de la línea */
+}
+.ver-mas {
+    text-align: center;
+    margin-top: -8px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+        display: flex;
+        flex-wrap: wrap;
+
+}
+.content-section {
+    flex: 2;
+    height: 100px;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 30px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.nueva-seccion {
+    height: 500px;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 30px; /* Ajusta el margen superior según tus necesidades */
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.perfil-derecho {
+    height: 300px;
+    width: 300px; /* o el ancho que desees */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.columna-derecha {
+    display: column;
+}
+.publicidad {
+    height: 300px; 
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
