@@ -1,15 +1,26 @@
-body {
+body, span, h1 {
     margin: 0;
     padding: 0;
     font-family: 'Arial', 'Helvetica', sans-serif;
 }
-
+span {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    color: #646464;
+}
 .menu { 
     display: flex;
     align-items: center;
     border-bottom: 2px solid #e8e8e8;
     height: 50px;
     padding: 0 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Ajusta el color de fondo según tus necesidades */
+    z-index: 1000; /* Ajusta el índice z según sea necesario */
 }
 
 .linkedin {
@@ -181,17 +192,16 @@ body {
     color: black;
 }
 .yo-container {
-    margin-top: 5PX;
-    display: flex;
-    flex-direction: column; 
-    cursor: pointer;
-    margin-left: 30px;
+    width: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 35px;
+    border-radius: 50%; /* Esto hará que el contenedor sea un círculo */
+    overflow: hidden; /* Esto oculta las partes de la imagen fuera del círculo */
+    border: 2px solid #ddd; /* Puedes ajustar el color y el grosor del borde */
+    margin-left: 20px;
 }
 .yo {
-    width: 30px;
+    width: 100%; /* Esto hará que la imagen se ajuste al tamaño del círculo */
     height: auto;
-    position: relative;
-    margin-bottom: 0px;
 }
 .text-yo {
     font-size: 12px; 
@@ -204,9 +214,9 @@ body {
     color: black;
 }
 .separador {
-    height: 50px; /* Ajusta la altura de la línea según tus necesidades */
+    height: 60px; /* Ajusta la altura de la línea según tus necesidades */
     width: 1px; /* Ancho de la línea */
-    background-color: #ddd; /* Color de la línea */
+    background-color: #ebeaea; /* Color de la línea */
     margin: 0 20px; /* Margen a cada lado de la línea */
 }
 .negocios-container {
@@ -291,18 +301,18 @@ body {
 }
 
 .foto-perfil {
-    width: 100%; /* Esto hará que la imagen se ajuste al tamaño del círculo */
+    width: 100%; 
     height: auto;
 }
 .universidad {
     font-size: 11px;
 }
 .section-divider {
-    width: 110%; /* Ajusta el ancho de la línea al 100% del contenedor */
-    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
-    background-color: #ddd; /* Color de la línea */
+    width: 110%; 
+    height: 1px; 
+    background-color: #ddd; 
     margin: 2px 0;
-    opacity: 70%; /* Ajusta el margen superior e inferior según tus necesidades */
+    opacity: 70%; 
     padding: 0px;
 }
 .contactos {
@@ -358,10 +368,10 @@ body {
 }
 
 .separator {
-    height: 1px; /* Grosor de la línea */
-    width: 220px; /* Longitud de la línea */
-    background-color: #ddd; /* Color de la línea */
-    margin-left: -10px; /* Margen izquierdo negativo igual a la longitud de la línea */
+    height: 1px; 
+    width: 220px; 
+    background-color: #ddd; 
+    margin-left: -10px; 
 }
 .ver-mas {
     text-align: center;
@@ -399,23 +409,386 @@ body {
     display: flex;
     align-items: center;
 }
-.perfil-derecho {
-    height: 300px;
-    width: 300px; /* o el ancho que desees */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-left: 30px;
-}
+
 .columna-derecha {
     display: column;
 }
 .publicidad {
-    height: 300px; 
-    width: 300px;
+    height: 260px; 
+    width: 260px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 30px;
+}
+.circle-guty {
+    width: 60px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 60px;
+    border-radius: 50%; /* Esto hará que el contenedor sea un círculo */
+    overflow: hidden; /* Esto oculta las partes de la imagen fuera del círculo */
+    border: 2px solid #ddd; /* Puedes ajustar el color y el grosor del borde */
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.circle-guty-image {
+    width: 100%; /* Esto hará que la imagen se ajuste al tamaño del círculo */
+    height: auto;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+.content-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Ajusta esta propiedad para alinear elementos en fila */
+}
+.publicacion {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.barra-publicacion {
+    width: 480px; /* O ajusta el ancho según tus necesidades */
+    border-radius: 35px; /* Ajusta el radio para esquinas redondeadas */
+    overflow: hidden;
+    height: 50px; /* Asegura que el contenido no sobresalga de las esquinas redondeadas */
+    border: none;
+    background-color: #ddd;
+    text-indent: 20px; 
+}
+.user-part {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.elementos-complementarios {
+    display: flex;
+    justify-content: space-between; /* Esto espaciara los elementos uniformemente */
+    align-items: center; /* Esto centrara verticalmente los elementos */
+    margin-bottom: 100px;
+}
+
+.elementos-complementarios .palabra {
+    display: flex;
+    align-items: center; /* Esto centrara verticalmente el texto e icono */
+}
+
+.elementos-complementarios .palabra img {
+    margin-right: 10px; /* Ajusta el espacio entre el texto y el icono según necesites */
+}
+.elementos-complementarios .palabra img {
+    width: 20px; /* Ajusta el tamaño del icono según tus necesidades */
+    height: auto; /* Esto mantiene la proporción original del icono */
+    margin-right: 5px; /* Ajusta el espacio entre el texto y el icono según necesites */
+}
+.elementos-complementarios {
+    display: flex;
+    gap: 80px; /* Ajusta el valor del espacio entre elementos según sea necesario */
+    justify-content: space-between;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+.nueva-seccion {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 250px;
+}
+h1{
+    font-size: 14px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #242424;
+}
+.perfil-recomendado {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.description-user {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    margin-left: 40px;
+}
+strong {
+    font-size: 13px;
+}
+.follow-button {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 2px solid #3498db; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #3498db; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 200px;
+    height: 20px;
+    width: 60px;
+    inlin: 3px;
+}
+
+.follow-button:hover {
+    background-color: #3498db; /* Cambia el fondo a azul al pasar el mouse */
+    color: white; /* Cambia el texto a blanco al pasar el mouse */
+}
+.perfil-recomendado2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-perfil2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.pic-perfil2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.description-user2 {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    margin-left: 10px;
+}
+strong {
+    font-size: 13px;
+}
+.follow-button2 {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 2px solid #3498db; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #3498db; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 200px;
+    height: 20px;
+    width: 60px;
+    inlin: 3px;
+}
+
+.follow-button2:hover {
+    background-color: #3498db; /* Cambia el fondo a azul al pasar el mouse */
+    color: white; /* Cambia el texto a blanco al pasar el mouse */
+}
+.perfil-recomendado3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-perfil3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-perfil3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.description-user3 {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    margin-left: 10px;
+}
+strong {
+    font-size: 13px;
+}
+.follow-button3 {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 2px solid #3498db; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #3498db; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 200px;
+    height: 20px;
+    width: 60px;
+}
+
+.follow-button3.accede {
+    background-color: #3498db; /* Cambia el fondo a azul al pasar el mouse */
+    color: white; /* Cambia el texto a blanco al pasar el mouse */
+}
+.publicidad {
+    max-width: 500px; /* Establece el ancho máximo del contenedor según tus necesidades */
+    overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+}
+
+.publicidad img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+.perfil-derecho {
+    height: 300px;
+    width: 250px; /* o el ancho que desees */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.cuenta-recomendado {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-cuenta {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.pic-cuenta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.tienda1 {
+    margin-left: 10px;
+}
+.boton-d1 {
+    display: inline-block;
+    padding: 15px 12px;
+    padding-top: 7px;
+    border: 2px solid #0e0e0e; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #1c1c1c; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 60px;
+    margin-top: -10px;
+    height: 10px;
+    width: 60px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 24px; /* Centra el texto verticalmente ajustando según tu referencia */
+}
+.cuenta-recomendado2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-cuenta2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.pic-cuenta2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.tienda2 {
+    margin-left: 10px;
+}
+.boton-d2 {
+    display: inline-block;
+    padding: 15px 12px;
+    padding-top: 7px;
+    border: 2px solid #0e0e0e; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #1c1c1c; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 60px;
+    margin-top: -10px;
+    height: 10px;
+    width: 60px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 24px; /* Centra el texto verticalmente ajustando según tu referencia */
+}
+.cuenta-recomendado3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.pic-cuenta3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.pic-cuenta3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+}
+.tienda3 {
+    margin-left: 10px;
+}
+.boton-d3 {
+    display: inline-block;
+    padding: 15px 12px;
+    padding-top: 7px;
+    border: 2px solid #0e0e0e; /* Borde azul */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    color: #1c1c1c; /* Texto color azul */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores al pasar el mouse */
+    margin-left: 60px;
+    margin-top: -10px;
+    height: 10px;
+    width: 60px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 24px; /* Centra el texto verticalmente ajustando según tu referencia */
+}
+.publicaciones {
+    border: 2px solid #ddd;
+    width: 640px;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 6px;
 }
